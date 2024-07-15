@@ -15,7 +15,7 @@ onMounted(() => {
 <template>
     <DefaultLayout>
         <div>
-            <h3 class="text-3xl font-medium text-gray-700">
+            <h3 class="text-3xl  font-semibold text-white">
                 Welcome {{ user?.username }}
             </h3>
 

@@ -2,5 +2,8 @@
 import DefaultLayout from "@/layout/DefaultLayout.vue";
 </script>
 <template>
-  <DefaultLayout></DefaultLayout>
+  <DefaultLayout>
+    <h3 class="text-3xl  font-semibold text-white">Component</h3>
+
+  </DefaultLayout>
 </template>

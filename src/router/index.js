@@ -33,12 +33,7 @@ const routes = [
     component: () => import("../views/Dashboard/ProfileView.vue"),
     meta: { requiresAuth: true },
   },
-  {
-    path: "/dashboard/task",
-    name: "dashboard.task",
-    component: () => import("../views/Dashboard/TaskView.vue"),
-    meta: { requiresAuth: true },
-  },
+  
   {
     path: "/dashboard/table",
     name: "dashboard.table",
@@ -46,9 +41,15 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
-    path: "/dashboard/note/:id",
-    name: "dashboard.note.detail",
-    component: () => import("../views/Dashboard/detail/NoteDetail.vue"),
+    path: "/dashboard/form",
+    name: "dashboard.form",
+    component: () => import("../views/Dashboard/FormView.vue"),
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/dashboard/component",
+    name: "dashboard.component",
+    component: () => import("../views/Dashboard/ComponentView.vue"),
     meta: { requiresAuth: true },
   },
   //  {

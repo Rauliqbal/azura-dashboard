@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 <template>
   <DefaultLayout>
-    <h3 class="text-3xl font-medium text-gray-700">Profile</h3>
+    <h3 class="text-3xl  font-semibold text-white">Profile</h3>
     <div class="mt-10">
       <table>
         <tr>

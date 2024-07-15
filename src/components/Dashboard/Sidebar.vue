@@ -24,7 +24,7 @@ const inactiveClass = ref(
             :class="
                 isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'
             "
-            class="fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-300 transform bg-white lg:translate-x-0 lg:static lg:inset-0 shadow-md"
+            class="fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-300 transform bg-white lg:translate-x-0 lg:static lg:inset-0 shadow-md px-4"
         >
             <div class="flex items-center justify-center mt-8">
                 <div class="flex items-center">
@@ -51,8 +51,10 @@ const inactiveClass = ref(
                 </div>
             </div>
 
+            <hr class="mt-8">
+
             <!-- Route Link -->
-            <nav class="mt-10 px-4">
+            <nav class="mt-10">
                 <router-link
                     class="flex items-center px-6 py-3 mt-4 duration-200 rounded-lg capitalize"
                     v-for="link in NAV_LINK"
