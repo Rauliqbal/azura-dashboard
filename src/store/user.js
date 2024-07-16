@@ -1,57 +1,34 @@
 import { api } from "@/service/api";
 import { defineStore } from "pinia";
-import { useRouter } from "vue-router";
 
 export const useUserStore = defineStore("user", {
   state: () => ({
     user: {
       username: "Rauliqbal",
       email: "example@gmail.com",
-      registrationDate: "2024-07-16T02:38:31.113+00:00"
+      registrationDate: "2024-07-16T02:38:31.113+00:00",
     },
+    users: null,
   }),
   getters: {},
   actions: {
     async fetcUser() {
       api
-        .get("/user")
+        .get("/users")
         .then((response) => {
-          if (response.data && response.data.data) {
-            this.user = response.data.data;
-          }
+          this.users = response.data;
           console.log(
             `Selamat Datang %c${this.user.username}!.`,
-            "color: green",
+            "color: green"
           );
           console.log(
             "Organize Work And Life Easily, %cFor Productivity",
-            "background-color: pink; color: black",
+            "background-color: pink; color: black"
           );
         })
         .catch((error) => {
-          if (error.response.status === 401) {
-            localStorage.clear();
-            window.location.reload();
-          }
+          this.users = null;
         });
     },
   },
 });
-
-// try {
-//   const response = await api.get("/user");
-//   if (response.data && response.data.data) {
-//     this.user = response.data.data;
-//   }
-
-//   console.log(`Selamat Datang %c${this.user.username}!.`, "color: green");
-//   console.log(
-//     "Organize Work And Life Easily, %cFor Productivity",
-//     "background-color: pink; color: black"
-//   );
-// } catch (error) {
-//   if (error.response.status === 401) {
-//     localStorage.clear();
-//     window.location.reload();
-//   }
-// },

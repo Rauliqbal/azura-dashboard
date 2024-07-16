@@ -11,13 +11,13 @@ import Sidebar from "@/components/Dashboard/Sidebar.vue";
         <div
             class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden"
         >
-            <div class="bg-primary w-full h-80 absolute top-0 left-0"></div>
+            <div class="bg-primary w-full h-96 absolute top-0 left-0"></div>
             <!-- Header -->
             <Header />
 
             <!-- Body -->
             <main class="z-10">
-                <div class="mx-auto max-w-screen-2xl py-4">
+                <div class="mx-auto max-w-screen-2xl p-4 lg:p-6">
                     <slot />
                 </div>
             </main>
