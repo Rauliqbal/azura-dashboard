@@ -1,23 +1,14 @@
 <script setup>
 import { computed, onMounted, ref } from "vue";
 import { useSidebar } from "../composables/useSidebar";
-import { api } from "@/service/api";
 import { useUserStore } from "@/store/user";
-import { useToast } from "vue-toast-notification";
 
 const dropdownOpen = ref(false);
 const { isOpen } = useSidebar();
-const $toast = useToast();
 
-function logout() {
-    localStorage.removeItem("access_token");
+const userStore = useUserStore()
+const user = computed(() => userStore.user)
 
-    $toast.info("Logout success", {
-        position: "top-right",
-        duration: 3000,
-    });
-    window.location.reload();
-}
 
 function getInitials(name) {
     if (!name) return "";
@@ -31,11 +22,6 @@ function getInitials(name) {
 
     return initials.toUpperCase();
 }
-
-const userStore = useUserStore();
-const user = computed(() => userStore.user);
-
-onMounted(() => userStore.fetcUser());
 </script>
 
 <template>

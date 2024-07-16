@@ -7,19 +7,21 @@
   body {
     @apply font-poppins bg-[#f8f8f8];
   }
-  
 }
 
 @layer components {
-  
+  /* BUTTON */
   .btn-primary {
     @apply inline-flex justify-center w-full md:w-auto px-10 py-3 bg-primary text-white font-semibold rounded-md hover:bg-emerald-600 transition duration-300 ease-out;
   }
-  
+
+  /* CARD */
+  .card {
+    @apply shadow-md rounded-2xl flex items-center px-5 py-6 bg-white;
+  }
 }
 
 @layer utilities {
-  
 }
 
 ::-webkit-scrollbar {

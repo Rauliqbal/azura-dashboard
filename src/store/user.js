@@ -6,6 +6,8 @@ export const useUserStore = defineStore("user", {
   state: () => ({
     user: {
       username: "Rauliqbal",
+      email: "example@gmail.com",
+      registrationDate: "2024-07-16T02:38:31.113+00:00"
     },
   }),
   getters: {},
