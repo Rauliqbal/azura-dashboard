@@ -57,7 +57,7 @@ function getInitials(name) {
                </span>
 
                <input
-                  class="w-32 pl-10 pr-4 text-gray-500 border-gray-200 rounded-lg sm:w-64 focus:border-indigo-600 focus:ring focus:ring-primary p-2 bg-gray-100 outline-none transition-all"
+                  class="w-32 pl-10 pr-4 text-gray-500 border-gray-200 rounded-lg sm:w-64 focus:border-indigo-600 focus:ring focus:ring-primary p-2 bg-gray-100 outline-none placeholder:text-sm transition-all"
                   type="text"
                   placeholder="Search here..."
                />
