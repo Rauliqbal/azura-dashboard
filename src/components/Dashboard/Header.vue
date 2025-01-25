@@ -2,6 +2,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useSidebar } from "../composables/useSidebar";
 import { useUserStore } from "@/store/user";
+import { VsxIcon } from "vue-iconsax";
 
 const dropdownOpen = ref(false);
 const { isOpen } = useSidebar();
@@ -50,13 +51,13 @@ function getInitials(name) {
             <!-- Search input -->
             <div class="relative mx-4 lg:mx-0">
                <span
-                  class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-700"
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400"
                >
-                  <i class="ai-search text-xl"></i>
+                  <VsxIcon iconName="SearchNormal1" :size="20" type="linear" />
                </span>
 
                <input
-                  class="w-32 pl-10 pr-4 text-gray-500 border-gray-200 rounded-lg sm:w-64 focus:border-indigo-600 focus:ring focus:ring-primary p-2 bg-gray-100 outline-none"
+                  class="w-32 pl-10 pr-4 text-gray-500 border-gray-200 rounded-lg sm:w-64 focus:border-indigo-600 focus:ring focus:ring-primary p-2 bg-gray-100 outline-none transition-all"
                   type="text"
                   placeholder="Search here..."
                />
