@@ -24,8 +24,8 @@ function getInitials(name) {
 </script>
 
 <template>
-   <header class="z-10">
-      <div class="flex items-center justify-between px-6 py-4 bg-white">
+   <header class="z-50">
+      <div class="flex items-center justify-between px-6 py-5">
          <div class="flex items-center">
             <button
                class="text-gray-500 focus:outline-none lg:hidden"
@@ -72,10 +72,10 @@ function getInitials(name) {
                      Hi! {{ user?.username }}
                   </p>
                   <button
-                     class="z-10 block w-10 h-10 bg-gray-200 overflow-hidden rounded-xl shadow focus:outline-none"
+                     class="z-10 block w-10 h-10 bg-gray-200 overflow-hidden rounded-full shadow focus:outline-none"
                      @click="dropdownOpen = !dropdownOpen"
                   >
-                     <span class="text-xl font-semibold text-indigo-500">
+                     <span class="text-xl font-bold text-indigo-500">
                         {{ getInitials(user?.username) }}
                      </span>
                   </button>
@@ -97,17 +97,17 @@ function getInitials(name) {
                >
                   <div
                      v-show="dropdownOpen"
-                     class="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl"
+                     class="flex flex-col items-start gap-1 absolute right-0 z-20 w-52 p-2 mt-2 border bg-white rounded-xl border-gray-100 shadow-md"
                   >
                      <RouterLink
                         to="/dashboard/profile"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-600 hover:text-white"
+                        class="text-left rounded-md px-4 py-2 text-sm text-gray-500 hover:bg-primary hover:text-white w-full"
                         >Profile
                      </RouterLink>
 
                      <button
                         @click="logout"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-600 hover:text-white w-full text-left"
+                        class="text-left rounded-md px-4 py-2 text-sm text-gray-500 hover:bg-primary hover:text-white w-full"
                      >
                         Log out
                      </button>

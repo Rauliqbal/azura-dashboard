@@ -16,4 +16,7 @@
    .card {
       @apply inline-flex rounded-2xl bg-white px-5 py-6 shadow-md;
    }
+   .chart {
+      @apply h-full rounded-2xl bg-white px-5 py-6 shadow-md;
+   }
 }

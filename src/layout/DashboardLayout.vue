@@ -15,7 +15,7 @@ import Sidebar from "@/components/Dashboard/Sidebar.vue";
 
          <!-- Body -->
          <main class="z-10 rounded-3xl bg-background overflow-y-auto">
-            <div class="mx-auto max-w-screen-2xl p-4 lg:px-10 mt-8">
+            <div class="mx-auto max-w-screen-2xl p-4 lg:px-10 mt-4">
                <slot />
             </div>
          </main>
