@@ -4,11 +4,12 @@
 @theme {
    --color-primary: #6575ed;
    --color-background: #f1f1f1;
+   --font-poppins: Poppins, serif;
 }
 
 @layer base {
    body {
-      @apply bg-white;
+      @apply bg-white font-poppins;
    }
 }
 
