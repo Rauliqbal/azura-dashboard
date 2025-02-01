@@ -1,13 +1,7 @@
 <script setup>
-import Hero from "@/components/Homepage/Hero.vue";
-import Navbar from "@/components/Navbar.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 </script>
 
 <template>
-  <div>
-    <Navbar />
-    <main>
-      <Hero />
-    </main>
-  </div>
+   <HelloWorld />
 </template>

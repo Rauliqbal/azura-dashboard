@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@config '../tailwind.config.js';
+
+@theme {
+   --color-primary: #6575ed;
+   --color-background: #f1f1f1;
+}
+
+@layer base {
+   body {
+      @apply bg-white;
+   }
+}
+
+@layer components {
+   .card {
+      @apply inline-flex rounded-2xl bg-white px-5 py-6 shadow-md;
+   }
+   .chart {
+      @apply h-full rounded-2xl bg-white px-5 py-6 shadow-md;
+   }
+}

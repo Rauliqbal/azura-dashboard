@@ -1,18 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: 'class',
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       container: {
         center: true,
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
-      colors: {
-        primary: "#58CE89",
+        padding: '1rem',
+        screens: {
+          md: "920px",
+          lg: "1024px",
+          xl: "1060px",
+          '1440px': "1280px",
+        }
       },
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+  }
+}
