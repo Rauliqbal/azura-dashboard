@@ -5,13 +5,13 @@ import { VsxIcon } from "vue-iconsax";
    <header class="py-6 bg-gray-100">
       <img class="w-14 mx-auto" src="../assets/logo.svg" alt="" />
    </header>
-   <div class="max-w-6xl mx-auto my-10">
-      <div class="grid grid-cols-2 gap-6">
+   <div class="max-w-6xl px-4 lg:px-0 mx-auto my-10">
+      <div class="grid lg:grid-cols-2 gap-6">
          <div
             class="col-span-1 row-span-3 rounded-2xl border-1 border-gray-300"
          >
-            <div class="p-6">
-               <div class="rounded-xl overflow-hidden">
+            <a href="#">
+               <div class="rounded-xl overflow-hidden hidden lg:block">
                   <svg
                      viewBox="0 0 877 520"
                      fill="none"
@@ -147,7 +147,7 @@ import { VsxIcon } from "vue-iconsax";
                   </svg>
                </div>
 
-               <div class="flex gap-4 mt-4">
+               <div class="p-6 flex flex-col lg:flex-row gap-4 lg:mt-4">
                   <div>
                      <div
                         class="w-11 h-11 inline-flex items-center justify-center bg-primary rounded-xl"
@@ -169,12 +169,16 @@ import { VsxIcon } from "vue-iconsax";
                      </p>
                   </div>
                </div>
-            </div>
+            </a>
          </div>
          <div
             class="row-span-1 flex items-center rounded-2xl border-1 hover:shadow-md transition-all border-gray-300"
          >
-            <a href="https://vuejs.org/" target="_blank" class="p-6 flex gap-4">
+            <a
+               href="https://vuejs.org/"
+               target="_blank"
+               class="p-6 flex flex-col lg:flex-row gap-4"
+            >
                <div>
                   <div
                      class="w-11 h-11 inline-flex items-center justify-center bg-gray-200 rounded-xl"
@@ -200,7 +204,7 @@ import { VsxIcon } from "vue-iconsax";
          >
             <a
                href="https://tailwindcss.com/docs/styling-with-utility-classes"
-               class="p-6 flex gap-4"
+               class="p-6 flex flex-col lg:flex-row gap-4"
             >
                <div>
                   <div
@@ -225,7 +229,10 @@ import { VsxIcon } from "vue-iconsax";
          <div
             class="row-span-1 flex items-center rounded-2xl border-1 hover:shadow-md transition-all border-gray-300"
          >
-            <a href="https://vite.dev/" class="p-6 flex gap-4">
+            <a
+               href="https://vite.dev/"
+               class="p-6 flex flex-col lg:flex-row gap-4"
+            >
                <div>
                   <div
                      class="w-11 h-11 inline-flex items-center justify-center bg-gray-200 rounded-xl"
@@ -246,6 +253,45 @@ import { VsxIcon } from "vue-iconsax";
                </div>
             </a>
          </div>
+      </div>
+
+      <h4 class="font-medium text-xl mt-8">Library Pendukung</h4>
+
+      <div class="grid lg:grid-cols-3 gap-6 mt-4">
+         <a
+            href="https://pinia.vuejs.org"
+            target="_blank"
+            class="p-6 border border-white bg-[#f7f7f7] rounded-xl hover:border hover:border-gray-300 transition-all"
+         >
+            <h5 class="font-semibold text-lg">Pinia</h5>
+            <p class="text-gray-500 leading-text text-sm mt-2">
+               Manajemen state untuk Vue.js yang memungkinkan Anda mengelola dan
+               berbagi state (data) antar komponen dengan mudah.
+            </p>
+         </a>
+
+         <a
+            href="https://router.vuejs.org"
+            target="_blank"
+            class="p-6 border border-white bg-[#f7f7f7] rounded-xl hover:border hover:border-gray-300 transition-all"
+         >
+            <h5 class="font-semibold text-lg">Vue Router</h5>
+            <p class="text-gray-500 leading-text text-sm mt-2">
+               Vue Router adalah library yang memungkinkan navigasi antar
+               halaman tanpa perlu memuat ulang seluruh halaman dari server.
+            </p>
+         </a>
+         <a
+            href="https://vue-iconsax-preview.vercel.app"
+            target="_blank"
+            class="p-6 border border-white bg-[#f7f7f7] rounded-xl hover:border hover:border-gray-300 transition-all"
+         >
+            <h5 class="font-semibold text-lg">Iconsax</h5>
+            <p class="text-gray-500 leading-text text-sm mt-2">
+               Sebuah icon pack atau kumpulan ikon yang menyediakan ribuan ikon
+               dengan berbagai gaya yang berbeda.
+            </p>
+         </a>
       </div>
    </div>
 
