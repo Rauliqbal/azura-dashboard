@@ -19,4 +19,7 @@
    .chart {
       @apply h-full rounded-2xl bg-white px-5 py-6 shadow-md;
    }
+   .btn {
+      @apply p-3 rounded-lg border border-gray-300
+   }
 }

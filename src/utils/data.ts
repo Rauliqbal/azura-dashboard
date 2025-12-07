@@ -3,25 +3,25 @@ export const NAV_LINK = [
       name: "dashboard",
       routeName: "dashboard",
       url: "/",
-      icon: "Category2",
+      icon: "LayoutGrid",
    },
    {
       name: "tables",
       routeName: "dashboard.table",
       url: "/table",
-      icon: "TableDocument",
+      icon: "Sheet",
    },
    {
       name: "forms",
       routeName: "dashboard.form",
       url: "/form",
-      icon: "Check",
+      icon: "NotepadText",
    },
    {
       name: "components",
       routeName: "dashboard.components",
       url: "/component",
-      icon: "I3Dcube",
+      icon: "Package",
    },
    {
       name: "profile",
@@ -33,7 +33,7 @@ export const NAV_LINK = [
       name: "chart",
       routeName: "dashboard.chart",
       url: "/chart",
-      icon: "Chart2",
+      icon: "ChartColumnBig",
    },
 ];
 

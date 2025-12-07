@@ -59,7 +59,6 @@ const inactiveClass = ref(
                :to="'/dashboard' + link.url"
             >
                <span>
-                  <!-- <VsxIcon :iconName="link.icon" :size="24" type="bulk" /> -->
                   <Icon :name="link.icon"/>
                </span>
 
