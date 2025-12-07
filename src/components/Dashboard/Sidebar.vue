@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { useSidebar } from "../composables/useSidebar";
 import { NAV_LINK } from "@/utils/data";
-import { VsxIcon } from "vue-iconsax";
+import Icon from '../Icon.vue'
 
 const { isOpen } = useSidebar();
 const activeClass = ref("bg-primary text-white shadow-md ");
@@ -59,7 +59,8 @@ const inactiveClass = ref(
                :to="'/dashboard' + link.url"
             >
                <span>
-                  <VsxIcon :iconName="link.icon" :size="24" type="bulk" />
+                  <!-- <VsxIcon :iconName="link.icon" :size="24" type="bulk" /> -->
+                  <Icon :name="link.icon"/>
                </span>
 
                <span>{{ link.name }}</span>

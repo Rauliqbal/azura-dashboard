@@ -3,7 +3,6 @@ import { useUserStore } from "@/store/user";
 import { computed, onMounted } from "vue";
 
 import DashboardLayout from "@/layout/DashboardLayout.vue";
-import { VsxIcon } from "vue-iconsax";
 import { STATS } from "@/utils/data";
 import ChartBar from "@/components/Charts/ChartBar.vue";
 import ChartLine from "@/components/Charts/ChartLine.vue";

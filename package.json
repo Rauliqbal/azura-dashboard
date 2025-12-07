@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "axios": "^1.7.2",
     "chart.js": "^4.4.7",
+    "lucide-vue-next": "^0.556.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-chartjs": "^5.3.2",
@@ -21,10 +21,7 @@
     "vue-toast-notification": "^3.1.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
     "@vitejs/plugin-vue": "^5.0.4",
-    "husky": "^9.1.7",
     "tailwindcss": "^4.0.0",
     "vite": "^5.2.8"
   }

@@ -2,7 +2,6 @@
 import { computed, onMounted, ref } from "vue";
 import { useSidebar } from "../composables/useSidebar";
 import { useUserStore } from "@/store/user";
-import { VsxIcon } from "vue-iconsax";
 
 const dropdownOpen = ref(false);
 const { isOpen } = useSidebar();
@@ -53,7 +52,8 @@ function getInitials(name) {
                <span
                   class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400"
                >
-                  <VsxIcon iconName="SearchNormal1" :size="20" type="linear" />
+                  <!-- <VsxIcon iconName="SearchNormal1" :size="20" type="linear" /> -->
+                   ICON
                </span>
 
                <input
